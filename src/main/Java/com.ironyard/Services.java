@@ -30,13 +30,13 @@ public class Services {
             System.out.print(x + "\"" + y + "\"");
         } else {
             System.out.print(x);
-            System.out.print("\"Not" + y + "\"");
+            System.out.print("\""+ "Not" +" " + y + "\"");
         }
     }
 
     public static void missingChar(String y, int z) {
 
-        String x = "Not String (\"" + y + "\")-->";
+        String x = "Missing Character (\"" + y + "\")-->";
         String xyz = y.substring(0, z) + y.substring(z + 1);
 
         System.out.print(x + "\"" + xyz + "\"");
@@ -95,17 +95,23 @@ public class Services {
 
             System.out.print(text + "\"" + newFront + newButt + "\"");
         } else {
-            System.out.print(y);
+            System.out.print(text + "\"" + y + "\"");
         }
     }
 
     public static void startOz(String y) {
-        String text = ("Delete Del(\"" + y + "\")" + "->");
+        String text = ("Start Oz(\"" + y + "\")" + "->");
         if (y.length() >= 2) {
             if (y.substring(0, 1).startsWith("o") || y.substring(0, 1).startsWith("O") &&
                     (y.substring(1, 2).startsWith("z") || y.substring(1, 2).startsWith("Z"))) {
-                System.out.print(y.substring(0, 2));
-            } else {
+                System.out.print(text + "\"" + y.substring(0, 2) + "\"");
+
+            }
+            else if ( (y.substring(1, 2).startsWith("z") || y.substring(1, 2).startsWith("Z"))){
+                String x = y.substring(1,2);
+                System.out.print(text + "\"" + x + "\"");
+            }
+            else {
                 System.out.print(text + "\"" + y.substring(0, 2) + "\"");
 
             }
@@ -117,8 +123,8 @@ public class Services {
             System.out.print(text + "\"" + y.substring(0,3).toUpperCase() + "\"");
         }
         else if (y.length()>=3){
-            String x = y.substring(2,y.length());
-            String a = y.substring(0,2);
+            String x = y.substring(y.length()-3, y.length());
+            String a = y.substring(0,y.length()-3);
             System.out.print(text + "\"" + a + x.toUpperCase() +"\"");
         }
         else{
