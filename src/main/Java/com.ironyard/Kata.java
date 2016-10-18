@@ -31,6 +31,8 @@ public class Kata {
         System.out.println(" ");
         System.out.println(" ");
         front22("Hello");
+        System.out.println(" ");
+        System.out.println(" ");
     }
 
 }
