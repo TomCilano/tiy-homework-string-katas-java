@@ -9,9 +9,6 @@ public class Kata {
 
     public static void main(String[] args) {
         javaKata();
-        System.out.println("");
-        System.out.println("");
-        System.out.println("");
         explode("Hello");
         System.out.println(" ");
         System.out.println(" ");
@@ -33,6 +30,14 @@ public class Kata {
         front22("Hello");
         System.out.println(" ");
         System.out.println(" ");
+        deleteDel("hdelello");
+        System.out.println(" ");
+        System.out.println(" ");
+        startOz("Hello");
+        System.out.println(" ");
+        System.out.println(" ");
+        endUP("Hello");
     }
+
 
 }
