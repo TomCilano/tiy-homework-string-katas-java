@@ -9,6 +9,8 @@ public class Kata {
 
     public static void main(String[] args) {
         javaKata();
+        System.out.println(" ");
+        System.out.println(" ");
         explode("Hello");
         System.out.println(" ");
         System.out.println(" ");
@@ -37,6 +39,8 @@ public class Kata {
         System.out.println(" ");
         System.out.println(" ");
         endUP("Hello");
+        System.out.println(" ");
+        System.out.println(" ");
     }
 
 
